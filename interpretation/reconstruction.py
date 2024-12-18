@@ -28,7 +28,7 @@ def overlay_images(folder1_path, folder2_path, output_folder, thickness=5):
 
     print("over")
 
-# 示例用法
+
 folder1_path = "D:/the/folder/of/time accumulation "
 folder2_path = "D:/the/folder/of/overlay"
 output_folder = "D:/the/folder/of/reconstruction"

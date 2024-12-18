@@ -10,7 +10,7 @@ def overlay_images(input_folder, output_folder):
 
     for i in range(1, len(file_names)):
         next_image = cv2.imread(os.path.join(input_folder, file_names[i]), cv2.IMREAD_GRAYSCALE)
-        next_image = np.where(next_image > 128, 255, 0).astype(np.uint8)  # 确保图像是二值化的
+        next_image = np.where(next_image > 128, 255, 0).astype(np.uint8)
 
         base_image = cv2.bitwise_or(base_image, next_image)
 

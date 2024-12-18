@@ -13,12 +13,12 @@ point3 = (501, 1401)
 # point3 = (573, 600)
 # point4 = (0, 600)
 
-background_color = (0, 0, 0)  # 黑色
+background_color = (0, 0, 0)
 output_folder = "D:/Segmentation/runs/quadrilater_outdoor"
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 
-# 读取文件夹中的图片并处理
+
 input_folder = "D:/Segmentation/runs/outdoor_overlay1contour"
 for filename in os.listdir(input_folder):
     image_path = os.path.join(input_folder, filename)
@@ -34,7 +34,6 @@ for filename in os.listdir(input_folder):
             else:
                 mask[y, x] = background_color
 
-    # 保存处理后的图像至目标文件夹
     output_path = os.path.join(output_folder, filename)
     cv2.imwrite(output_path, mask)
 
