@@ -20,7 +20,6 @@ def save_contours(contours, folder_path, filename):
 
     save_path = os.path.join(output_folder, filename)
 
-    # 保存轮廓图像
     cv2.imwrite(save_path, contour_img)
     print(f"Saved contours: {save_path}")
 
