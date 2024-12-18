@@ -1,0 +1,9 @@
+path: ../coco2017labels-segments/coco  # dataset root dir
+train: D:/data(teacher)/paper-code/YOLOv7original/YOLOv7-Pytorch-Segmentation/data/txt/train.txt  # train images (relative to 'path') 118287 images
+val: D:/data(teacher)/paper-code/YOLOv7original/YOLOv7-Pytorch-Segmentation/data/txt/val.txt  # val images (relative to 'path') 5000 images
+test: D:/data(teacher)/paper-code/YOLOv7original/YOLOv7-Pytorch-Segmentation/data/txt/test.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+nc : 1
+# Classes
+names:
+    0: fire
